@@ -1,0 +1,492 @@
+@import url('https://fonts.googleapis.com/css2? family= Alkatra & family= Libre+Baskerville:ital@0;1 & family= Lora & family= Merriweather & family= Poppins:wght@ 500 & family= Roboto & family= Roboto+Slab:wght@400;500 & family= Rubik+Glitch & display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    margin: o;
+    padding: 0;
+
+}
+
+:root{
+
+    
+    
+    --textodecorado: 'Poppins', sans-serif;
+
+
+
+}
+
+
+html{
+    font-size: 60%;
+    
+}
+
+
+body{
+   background-image: linear-gradient(
+       to top left,
+       rgb(245, 239, 239),
+        #D4ADFC, 
+         #5C469C,
+         #1D267D,
+        #0C134F
+   );
+   
+
+   
+}
+.header{
+    background: rgb(243, 253, 250);
+    top: 0;
+    left: 0;
+    position: fixed;
+    padding: 10px 20px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    z-index: 100;
+    width: 100%;
+    justify-content: space-around;
+}
+.header img{
+    border-radius: 300px;
+    width: 60px;
+}
+.logo{
+    font-size: 2,5rem;
+    color: brown;
+    font-weight: 600px;
+    cursor: default;
+
+}
+.confg a {
+    font-weight: 400;
+    color: black;
+    margin-left: 2.8rem;
+    font-size: 1.7rem;
+    transition: 0.3s;
+}
+.confg :hover{
+    color: var(--fundo);
+}
+.nav-btn {
+    position: relative;
+    display: inline;
+    margin-left: 2.8rem;
+    font-weight: 300;
+    
+}
+.btn{
+    width: 130px;
+    height: 40px;
+    font-weight: 400;
+    background: rgb(129, 56, 56) transparent;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .3s ease;
+    align-items: center;
+    gap: 20px;
+
+}
+.btn:hover {
+    border-bottom: 2px solid #151516c7;
+}
+
+#menu-icon {
+    font-size: 5.8rem;
+    color: black;
+    cursor: pointer;
+    display: none;
+}
+
+
+
+/** fim do cabeçalho**/
+
+/**stylo da 1 seção**/
+
+section{
+    min-height: 100vh;
+    padding: 10rem 7% 4rem;  
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    padding: 0 9%;
+    display: grid;
+    gap: 15px;
+    grid-template-columns: 1fr 1fr;
+    
+   
+
+}
+.home .btn-cadastro{
+    align-items: center;
+}
+#btn-cadastro{
+    width: 250px;
+    height: 150px;
+    left: 45px;
+}
+.home img{
+    position: relative;
+    display: flex;
+    width: 420px;
+    height: 350px;
+    top: 15px;
+    left: -25px;
+    
+
+    
+}
+
+.home-paragrafo{
+    max-width: 50rem;
+    position: relative;
+    width: 580px;
+    height: 333px;
+    left: 120px;
+    top: 25px;
+    border-radius: 60px 60px 60px 0;
+    background: rgba(196, 194, 194, 0.28);
+    z-index: 99;
+}
+.home-paragrafo h1{
+    font-size: 2.8rem;
+    font-weight: 300;
+    line-height: 1.3;
+    height: 108px;
+    width: 560px;
+    text-align: center;
+    font-family: var(--textodecorado);
+    
+
+}
+.home-texto p{
+    font-size: 1.4rem;
+    align-items: center;
+    text-align: center;
+    font-family: var(--textodecorado);
+
+}
+/*fim da 1 seção*/
+
+
+/*incio da 2 secção*/
+
+
+.serviço .serviço-conponente{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5rem;
+    overflow-x: auto;
+}
+
+.topico-secao{
+    font-family: var(--textodecorado);
+    font-size: 3.8rem;
+    align-items: center;
+    justify-items: space-between;
+    position: relative;
+    display: flex;
+    left: 46rem;
+}
+h1{
+    align-items: center;
+    text-align: center;
+    
+    
+}
+.serviço p{
+    font-size: 1.9rem;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    font-family: var(--textodecorado);
+}
+
+
+#serviço{
+    font-family: var(--textodecorado);
+    background: rgb(245, 239, 239);
+
+}
+.serviço-conponente .serviço-box{
+    flex: 1 1 30rem;
+    background: rgb(206, 144, 144);
+    padding: 3rem 3rem 4rem;
+    border-radius: 2rem;
+    text-align: center;
+    border-top: .6rem solid;
+    width: 160px;
+    height: 220px;
+    font-size: 1.5rem;
+    background-image: url('o-que-e-home-care-1.png');
+    background-size: cover;
+    
+
+}
+#cuidado{
+    background-image: url("sobre-o-servico-de-cuidador-de-idosos.jpg");
+}
+
+
+/**section 3**/
+
+.sobre img{
+    border-radius: 450px;
+    width: 290px;
+    align-items: center;
+    justify-items: center;
+}
+
+.sobre{
+    align-items: center;
+    font-size: medium;
+}
+.listado ul p{
+    padding: 20px;
+    font-size: medium;
+}
+
+/*rodapé*/
+
+.footer{
+    background: white;
+}
+
+
+
+
+
+
+
+
+
+/**configuração do butao**/
+.wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 500px;
+    height: 100%;
+    background-color: transparent;
+    backdrop-filter: blur(15px);
+    box-shadow: -1px 0 10px rgba(0, 0, 0, .2);
+    border-left: 2px solid rgba(256, 255, 255, .1);
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    opacity: 0;
+    pointer-events: none;
+ }
+ 
+ .wrapper.active-popup {
+    opacity: 2;
+    pointer-events: auto;
+ }
+ 
+ .icon-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 46px;
+    height: 46px;
+    background: #fff;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 10px;
+ }
+ 
+ .icon-close i {
+    font-size: 32px;
+    color: #333;
+ }
+ 
+ .wrapper .logreg-box {
+    width: 100%;
+ }
+  
+ .wrapper .form-box.login {
+    display: block;
+ }
+ 
+ .wrapper.active .form-box.login {
+    display: none;
+ }
+ 
+ .wrapper .form-box.cadastro {
+    display: none;
+ }
+ 
+ .wrapper.active .form-box.cadastro {
+    display: block;
+ }
+ 
+ .logreg-box .logreg-title {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #000000;
+ }
+ 
+ .logreg-title h2 {
+    font-size: 32px;
+ }
+ 
+ .logreg-box p {
+    font-size: 16px;
+    font-weight: 600;
+ }
+ 
+ .logreg-box .input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+    border-bottom: 2px solid #fff;
+ }
+ 
+ .input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 500;
+    padding-right: 25px;
+ }
+ 
+ .input-box label {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: #fff;
+    font-weight: 500;
+    pointer-events: none;
+    transition: .6s;
+ }
+ 
+ .input-box input:focus~label,
+ .input-box input:valid~label {
+    top: -5px;
+ }
+ 
+ .input-box .icon {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #fff;
+ }
+ 
+ .logreg-box .lembrar-esquecer {
+    font-size: 14.5px;
+    color: #fff;
+    font-weight: 500;
+    margin: -15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+ }
+ 
+ .lembrar-esquecer label input {
+    accent-color: #fff;
+    margin-right: 3px;
+ }
+ 
+ .lembrar-esquecer a {
+    color: #fff;
+    text-decoration: none;
+ }
+ 
+ .lembrar-esquecer a:hover {
+    text-decoration: underline;
+ }
+ 
+ .logreg-box .btn {
+    width: 100%;
+    height: 50px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+    cursor: pointer;
+    font-size: 17px;
+    color: #222;
+    font-weight: 600px;
+    font-family: 'Poppins', sans-serif;   
+ 
+ }
+ 
+ .logreg-box .logreg-link {
+    font-size: 14.5px;
+    color: #fff;
+    text-align: center;
+    font-weight: 500;
+    margin: 26px 0 15px;
+ }
+ 
+ .logreg-link p a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+ }
+ 
+ .logreg-link p a:houver {
+    text-decoration: underline;
+ }
+ 
+ .media-options {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+ }
+ 
+ .media-options a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #fff;
+    margin: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+    border-radius: 40px;
+    color: aliceblue;
+    text-decoration: none;
+    transition: .6s;
+ }
+ 
+ .media-options a:hover {
+    background: rgba(256, 255, 255, .1);
+ }
+ 
+ .media-options a i {
+    font-size: 23px;
+ }
+ 
+ .media-options a span {
+    font-size: 16px;
+    font-weight: 600;
+ }
