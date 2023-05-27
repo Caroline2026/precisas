@@ -7,7 +7,7 @@
     <title>precisas: site de emprego</title>
     <link rel="stylesheet" href="stylo.css">
     <link rel="stylesheet" href="https://boxicons.com/?query=menu">
-    
+    <link rel="stylesheet" href="code.js">
 </head>
 <body>
 <!--inicio do header-->
@@ -26,11 +26,9 @@
         <a href="#sobrenos">Sobre nós</a>
              
         
-        <div class="nav-btn">
-               <a > <button class="btn" >Entrar </button></a>
-                <button class="btn" >Cadastre-se</button>
-    
-         </div>
+       
+               <a > <button class="btn-login" >Entrar </button></a>
+                <button class="btn-cadastro" >Cadastre-se</button>
     
     </nav>
 </header>
@@ -39,213 +37,23 @@
 
 <section>
     <div class="home" >
-                     <div>
-                    <img src="mao.png" alt="imagem de mãos se unidas">
-                    </div>  
+                     
                     <div class="home-paragrafo">
                         <h1><b>Liga você com os melhores profissionais especializado em cuidado do mercado.</b></h1>
 
                     <div class="home-texto">
                         <p>Relaciona profissionais especializados em cuidado em único local.</p>
                     </div>
-                    <div class="btn" id="home-btn">
+                    <div class="btn-cadastro" id="home-btn">
                         <button>Cadastre-se</button>
                     </div>
                 </div>
-
+                    <div>
+                    <img src="mao.png" alt="imagem de mãos se unidas">
+                    </div>  
 
     </div>
 </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<section class="section">
-    <div class="wrapper">
-        <span class="icon-close">
-            <i class='bx bx-x'></i>
-        </span>
-        <div class="logreg-box">
-            <!--Forma de Logar-->
-            <div class="form-box login">
-                <div class="logreg-title">
-                     <h2>Login</h2>
-                     <p>Teste, Login!</p>
-                </div> 
-                
-                <form action="#">
-                    <div class="input-box">
-                        <span class="icon"><i class='bx bxs-envelope'></i></span>
-                        <input type="email" required>
-                        <label>E-mail:</label> 
-                    </div>
-                    <div class="input-box">
-                        <span class="icon"><i class='bx bxs-lock-alt' ></i></span>
-                        <input type="password" required>
-                        <label>Senha:</label> 
-                    </div>    
-
-                     <div class="lembrar-esquecer">
-                         <label><input type="checkbox"> Lembrar Senha</label>
-                         <a href="#">Esqueceu a senha?</a>
-                     </div>
-                     <button type="button" class="btn">Login</button>
-
-                    <!--<buttom type="submit" 
-                    class="btn">Login</buttom>-->
-
-                       <div class="logreg-link">
-                            <p>Não tem uma conta? <a href="#" class="cadastro-link">Cadastre-se</a></p>
-                       </div>   
-                </form>
-            </div>
-                   
- 
-            
-            <!--Forma de Cadastro-->
-
-
-            <div class="form-box cadastro">
-                <div class="logreg-title">
-                     <h2>Cadastro</h2>
-                     <p>Teste, Cadastro!</p>
-                </div> 
-                
-                <form action="#">
-                    <div class="input-box">
-                        <span class="icon"><i class='bx bxs-user' ></i></span>
-                        <input type="text" required>
-                        <label>Nome Completo:</label> 
-                    </div>
-
-
-                    <div class="input-box">
-                        <span class="icon"><i class='bx bxs-user' ></i></span>
-                        <input type="text" required>
-                        <label>CPF:</label> 
-                    </div>
-
-                    <div class="input-box">
-                        <span class="icon"><i class='bx bxs-envelope'></i></span>
-                        <input type="email" required>
-                        <label>E-mail:</label> 
-                    </div>
-                    <div class="input-box">
-                        <span class="icon"><i class='bx bxs-lock-alt' ></i></span>
-                        <input type="Senha" required>
-                        <label>Senha:</label> 
-                    </div>    
-
-                     <div class="lembrar-esquecer">
-                         <label><input type="checkbox"> Concordo com os termos e condições do site</label>
-                     </div>
-                     <button type="button" class="btn"><strong>Cadastra-se</strong></button>
-
-<!--<buttom type="submit" class="btn">Cadastra-se <i class='bx bxs-user-check'></i></buttom>-->
-
-                       <div class="logreg-link">
-                            <p>Já tenho uma conta! <a href="#" class="login-link">Fazer Login</a></p>
-                       </div>   
-                </form>
-            </div>
-        </div>
-            <div class="media-options">
-                <a href="#">
-                    <i class='bx bxl-google'></i>
-                    <span>Login com Google</span>
-                </a>
-                <a href="#">
-                    <i class='bx bxl-facebook-square' ></i>
-                    <span>Login com Facebook</span>
-                </a>
-            </div>
-    </div>
-
-
-</section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -257,7 +65,7 @@
 
 <section class="serviço" id="serviço">
    
-        <h1 class="topico-secao"> SERVIÇOS </h1>
+    <h1 class="serviço-inicio">Serviço</h1>
         
             <div class="serviço-conponente">
                 <div class="serviço-box" id="cuidado">
