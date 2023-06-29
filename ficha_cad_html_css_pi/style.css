@@ -1,0 +1,160 @@
+@charset "UTF-8";
+
+* {
+    outline: none;
+
+}
+
+
+form {
+    background-color: #04357DC7;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    padding: 30px;
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+
+}
+
+img {
+    border-radius: 15px;
+    box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.4);
+    border: white solid 2px;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 2.5rem;
+}
+
+
+.box1 {
+    width: 96%;
+    
+
+}
+
+.box2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.box3 {
+    display: flex;
+    justify-content: space-between
+}
+
+.box4 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.box5 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box6 {
+    display: flex;
+
+}
+
+#endereco {
+
+    width: 670px;
+}
+
+#complemento {
+    width: 190px;
+}
+
+#ponto_ref {
+    width: 450px;
+
+}
+
+#cpf {
+    width: 210px;
+}
+
+#whatsapp {
+    width: 200px;
+}
+
+#outro_contato {
+    width: 200px;
+
+}
+
+#email {
+    width: 475px;
+
+}
+
+#cidade {
+    display: flex;
+    width: 282px;
+    justify-content: space-between;
+}
+
+.rodape {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+fieldset {
+    border: white solid 2px;
+    border-radius: 10px;
+    gap: 12px;
+
+
+}
+
+body {
+    background-color: #a5a5a6;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.5em;
+    justify-content: center;
+}
+
+input {
+    color: #828282;
+    margin: 5px 5px;
+    border: none;
+    padding: 10px;
+
+}
+
+button {
+    background-color: #04357DC7;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    padding: 10px 40px;
+    color: white;
+    border: 3px solid;
+    box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.3);
+}
+
+.button {
+    text-align: center;
+}
+
+.cancelar {
+    background-color: red;
+}

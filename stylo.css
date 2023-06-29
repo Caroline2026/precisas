@@ -24,14 +24,13 @@
 
 
 html{
-    font-size: 60%;
-    
+    font-size: 64%;
 }
 
 body{
    background-image: linear-gradient(
        to top,
-       rgb(245, 239, 239),
+       
         #D4ADFC, 
          #5C469C,
          #1D267D,
@@ -42,7 +41,7 @@ body{
    
 }
 .header{
-    background: rgb(243, 253, 250);
+    background: rgb(243, 253, 250) transparent;
     top: 0;
     left: 0;
     position: fixed;
@@ -54,7 +53,8 @@ body{
     justify-content: space-around;
 }
 .header img{
-    border-radius: 300px;
+   clip-path: circle();
+    
     width: 60px;
 }
 .logo{
@@ -72,28 +72,52 @@ body{
     transition: 0.3s;
 }
 .confg :hover{
-    color: var(--fundo);
+    color: #D4ADFC;
+    
 }
-.nav-btn {
+/*.nav-btn {
     position: relative;
     display: inline;
     margin-left: 2.8rem;
     font-weight: 300;
     
-}
-/*.confg .btn-cadastro::before {
-    content: " ";
-    position: absolute;
-    
-    width: 100%;
-    height: 3px;
-    background: #fff;
-    opacity: .86;
-    margin-left: 10px;
- 
- }*/
+}*/
 
-.btn-cadastro{
+
+
+ .cadastro {
+   position: relative;
+   text-align: center;
+   text-transform: lowercase;
+   left: 700px;
+    
+}
+
+.cadastro h1{
+   color: white;
+   width: 100%;
+   margin-top: -250px;
+   font-size: 1.5rem;
+   font-weight: 600;
+   line-height: 1.5rem;
+   font-family: var(--textodecorado);  
+}
+
+.cadastro button{
+   font-size: 1.5rem;
+   margin: 5%;
+   padding: 3%;
+   width: 160px;
+   border: none;
+   border-radius: 15px;
+   cursor: pointer;
+   background-color: #323b94;
+   color: white;
+}
+
+
+
+/*.btn-login{
     width: 130px;
     height: 40px;
     font-size: 1.5rem;
@@ -104,19 +128,23 @@ body{
     transition: .3s ease;
     align-items: center;
    
+}*/
+.btnLogin{
+   width: 130px;
+   height: 40px;
+   font-size: 1.5rem;
+   background: rgb(129, 56, 56) transparent;
+   border: none;
+   border-radius: 25px;
+   cursor: pointer;
+   transition: .3s ease;
+   align-items: center;
+   font-size: 1.8rem;
+   margin: 1em;
+   font-weight: 300;
 }
-.btn-login{
-    width: 130px;
-    height: 40px;
-    font-size: 1.5rem;
-    background: rgb(129, 56, 56) transparent;
-    border: none;
-    border-radius: 25px;
-    cursor: pointer;
-    transition: .3s ease;
-    align-items: center;
-   
-}
+
+
 
 #menu-icon {
     font-size: 5.8rem;
@@ -132,8 +160,24 @@ body{
 /**stylo da 1 seção**/
 
 section{
+   padding: 10rem 7% 4rem;
+   min-height: 100vh;
+   
+   
+
+   /*
     min-height: 100vh;
-    padding: 10rem 7% 4rem;  
+    padding: 10rem 7% 6rem;*/
+    
+}
+.home-fundo{
+    background-image: url("mudança.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    color: transparent;
+    margin-top: -29%;
 }
 
 .home{
@@ -141,38 +185,50 @@ section{
     align-items: center;
     padding: 0 9%;
     display: flex;
-    gap: 125px;
+    /*gap: 125px;*/
     grid-template-columns: 1fr 1fr;
     justify-content: space-around;
-
+    position: absolute;
+    top: 200px;
     
-   
-
 }
-.home .btn-cadastro{
+
+.form-container {
+   position: absolute;
+   /*top: 50%;*/
+   left: 50%;
+   transform: translateY(-50%, -50%);
+   z-index: 99;
+   background-color: #fff;
+   color: #000000;
+}
+
+/*.form-close {
+   position: absolute;
+   top:  10px;
+   right: 20px;
+   color: #0b0217;
+   font-size: 23px;
+   opacity: 0.7;
+   cursor: pointer;
+}*/
+
+/* .btn-cadastro{
     align-items: center;
     font-size: 1.5rem;
-    background: rgb(129, 56, 56) transparent;
-    border: none;
-    border-radius: 25px;
-    cursor: pointer;
-    transition: .3s ease;
+    background-color: rgb(129, 56, 56) transparent;
+    border-radius: 12px;
+    width: 76px;
+    transition: 0.3s; 
+     
+    
     
 }
-#btn-cadastro{
-    width: 250px;
-    height: 150px;
-    left: 45px;
-}
-.home img{
-    position: relative;
-    display: fixed;
-    width: 380px;
-    height: 330px;
-    margin-top: 100px;
+.btn-cadastro:hover{
+    color: #5C469C;
+}*/
 
-    
-}
+
 
 .home-paragrafo{
     max-width: 50rem;
@@ -183,12 +239,12 @@ section{
     border-radius: 60px 60px 60px 0;
     /*background: rgba(196, 194, 194, 0.28);*/
     z-index: 99;
-    margin-top: 6%;
+    margin-top: 3%;
 }
 .home-paragrafo h1{
-    font-size: 3.5rem;
-    font-weight: 300;
-    line-height: 1.3;
+    font-size: 3.4rem;
+    font-weight: 250;
+    line-height: 1.5;
     /*height: 130px;*/
     width: 100%;
     text-align: left;
@@ -196,12 +252,13 @@ section{
     color: white;
     margin-bottom: 6%;
     
+    
  
 }
 .home-texto p{
-    font-size: 1.5rem;
+    font-size: 1.9rem;
     align-items: center;
-    text-align: left;
+    text-align: center;
     padding-bottom: 10%;
     font-family: var(--textodecorado);
     color: white;
@@ -231,15 +288,21 @@ section{
 
 
 .serviço p{
-    font-size: 1.9rem;
+    font-size: 1.5rem;
     display: flex;
-    text-align: center;
+    text-align: justify;
     align-items: center;
     font-family: var(--textodecorado);
     margin-top: 4%;
     position: relative;
+    padding-left: 30%;
     
     
+}
+label{
+    color: #0C134F;
+    margin-top: 34%;
+
 }
 
 
@@ -265,12 +328,19 @@ section{
 }
 #cuidado{
     background-image: url("sobre-o-servico-de-cuidador-de-idosos.jpg");
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+#comorbidade{
+    background-image: url("mao.png");
+    background-size: cover;
+    font-size: 1.3rem;
 }
 
 
 /**section 3**/
 
-.sobre img{
+.sobrenos img{
     /*border-radius: 380px;*/
     clip-path: circle();
     width: 290px;
@@ -282,12 +352,12 @@ section{
     
 }
 
-.sobre{
+.sobrenos{
     align-items: center;
     font-size: medium;
      
 }
-.sobre h1{
+.sobrenos h1{
    text-align: center;
    padding-bottom: 4%;
 }
@@ -299,102 +369,131 @@ section{
 /*rodapé*/
 
 .footer{
-    background: white;
+    background: white transparent;
+    min-height: 250px;
+   
+    
+}
+.footer-contato{
+    text-align: center;
+    justify-items: center;
+    font-size: large;
+    border: #ffffff solid;
+    padding-top: 3%;
+    
+}
+.icon{
+    font-size: 85px;
 }
 
 
 
 
+/*codigo*/
 
-
-
-
-
-/**configuração do butao**/
-.wrapper {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 500px;
-    height: 100%;
-    background-color: transparent;
-    backdrop-filter: blur(15px);
-    box-shadow: -1px 0 10px rgba(0, 0, 0, .2);
-    border-left: 2px solid rgba(256, 255, 255, .1);
-    z-index: 100;
+.form-container {
+    position: relative;
+    width: 400px;
+    height: 440px;
+    background: #fff;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
     display: flex;
     justify-content: center;
-    flex-direction: column;
-    padding: 0 40px;
-    opacity: 0;
-    pointer-events: none;
+    left: 40%;
+    top: 160px;
+    overflow: hidden;
+    transform:scale(0);
+    transition: .5s ease, .3s ease;
+    z-index: 99;
+ }  
+ 
+ .form-container.active-popup {
+    transform: scale(1);
  }
  
- .wrapper.active-popup {
-    opacity: 2;
-    pointer-events: auto;
+ .form-container.active {
+    height: 680px;
+    width: 450px;
+    transform: scale(1);
  }
  
- .icon-close {
-    position: absolute;
+ .form-container .form-box.login {
+    transition: .8s ease;
+    transform: translateX(0);
+ }
+ 
+ .form-container.active .form-box.login {
+    transition: none;
+    transform: translateX(-450px);
+ }
+ 
+ .form-container .form-box.cadastro {
+    position: fixed;
+    transition: none;
+    transform: translateX(400px);
+ }
+ 
+ .form-container.active .form-box.cadastro {
+    transition: .18s ease;
+    transform: translateX(0);
+ }
+ 
+ .form-container .form-box {
+    width: 100%;
+    padding: 40px;
+    /*position: relative;
+    left: -10px;*/
+ }
+ 
+ .form-container .close {
+    position: relative;
     top: 0;
     right: 0;
     width: 46px;
     height: 46px;
-    background: #fff;
+    /*background: #162938;*/
+    font-size: 2em;
     cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-bottom-left-radius: 10px;
+    /*border-bottom-left-radius: 10px;*/
+    z-index: 99;
  }
  
- .icon-close i {
-    font-size: 32px;
-    color: #333;
- }
- 
- .wrapper .logreg-box {
-    width: 100%;
- }
-  
- .wrapper .form-box.login {
-    display: block;
- }
- 
- .wrapper.active .form-box.login {
-    display: none;
- }
- 
- .wrapper .form-box.cadastro {
-    display: none;
- }
- 
- .wrapper.active .form-box.cadastro {
-    display: block;
- }
- 
- .logreg-box .logreg-title {
+ .form-box h2 {
+    font-size: 2em;
+    color: #162938;
     text-align: center;
-    margin-bottom: 40px;
-    color: #000000;
+    margin-top: 4%;
  }
  
- .logreg-title h2 {
-    font-size: 32px;
- }
- 
- .logreg-box p {
-    font-size: 16px;
-    font-weight: 600;
- }
- 
- .logreg-box .input-box {
+ .input-box {
     position: relative;
     width: 100%;
     height: 50px;
+    border-bottom: 2px solid #162938;
     margin: 30px 0;
-    border-bottom: 2px solid #fff;
+ }
+ 
+ .input-box label {
+    position: relative;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: #162938;
+    font-weight: 500;
+    pointer-events: none;
+    transition: .5s;
+ }
+ 
+ .input-box input:focus~label,
+ .input-box input:valid~label {
+   top: 5px;
  }
  
  .input-box input {
@@ -403,41 +502,23 @@ section{
     background: transparent;
     border: none;
     outline: none;
-    font-size: 16px;
-    color: #fff;
-    font-weight: 500;
-    padding-right: 25px;
- }
- 
- .input-box label {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-    font-size: 16px;
-    color: #fff;
-    font-weight: 500;
-    pointer-events: none;
-    transition: .6s;
- }
- 
- .input-box input:focus~label,
- .input-box input:valid~label {
-    top: -5px;
+    font-size: 1em;
+    color: #162938;
+    font-weight: 600;
+    padding: 0 35px 0 35px;
  }
  
  .input-box .icon {
     position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%);
-    font-size: 20px;
-    color: #fff;
+    right: 8px;
+    font-size: 1.2em;
+    color: #162938;
+    line-height: 57px;
  }
  
- .logreg-box .lembrar-esquecer {
-    font-size: 14.5px;
-    color: #fff;
+ .lembrar-esquecer {
+    font-size: .9em;
+    color: #162938;
     font-weight: 500;
     margin: -15px 0 15px;
     display: flex;
@@ -445,12 +526,12 @@ section{
  }
  
  .lembrar-esquecer label input {
-    accent-color: #fff;
+    accent-color: #162938;
     margin-right: 3px;
  }
  
  .lembrar-esquecer a {
-    color: #fff;
+    color: #162938;
     text-decoration: none;
  }
  
@@ -458,71 +539,199 @@ section{
     text-decoration: underline;
  }
  
- .logreg-box .btn {
+ .btn {
     width: 100%;
-    height: 50px;
-    background: #fff;
+    height: 46px;
+    background: #162938;
     border: none;
     outline: none;
-    border-radius: 40px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+    border-radius: 6px;
     cursor: pointer;
-    font-size: 17px;
-    color: #222;
-    font-weight: 600px;
-    font-family: 'Poppins', sans-serif;   
- 
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
  }
  
- .logreg-box .logreg-link {
-    font-size: 14.5px;
-    color: #fff;
-    text-align: center;
-    font-weight: 500;
-    margin: 26px 0 15px;
+ .cadastre {
+   color: #162938;
+   text-align: center;
+   font-weight: 500;
+   margin: 26px 0 10px;
  }
  
- .logreg-link p a {
-    color: #fff;
+ .cadastre p a {
+    color: #162938;
     text-decoration: none;
     font-weight: 600;
  }
  
- .logreg-link p a:houver {
+ .cadastre p a:hover {
     text-decoration: underline;
  }
  
- .media-options {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+ .logue {
+    color: #162938;
+    text-align: center;
+    font-weight: 500;
+    margin: 26px 0 10px;
  }
  
- .media-options a {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 50px;
-    background: transparent;
-    border: 2px solid #fff;
-    margin: 10px 0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
-    border-radius: 40px;
-    color: aliceblue;
-    text-decoration: none;
-    transition: .6s;
+ .logue p a {
+     color: #162938;
+     text-decoration: none;
+     font-weight: 600;
  }
  
- .media-options a:hover {
-    background: rgba(256, 255, 255, .1);
+ .logue p a:hover {
+     text-decoration: underline;
  }
  
- .media-options a i {
+ .bxs-user-check.register {
     font-size: 23px;
  }
- 
- .media-options a span {
-    font-size: 16px;
+
+/*fim*/
+
+
+
+
+ /*cadastro de ambos*/
+#checkbox {
+    position: relative;
+    top: -25px;
+}
+
+ .cuida-container {
+    position: relative;
+    width: 400px;
+    height: 640px;
+    background: #fff;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: center;
+    left: 40%;
+    transform: scale(0);
+    transition: .4s ease;
+    bottom: 199px;
+}
+
+.cuida-container.active {
+    transform: scale(1);  
+}
+
+.cuida-container .form-box {
+    width: 100%;
+    padding: 25px;
+}
+
+.paci-container {
+    position: relative;
+    width: 400px;
+    height: 563px;
+    background: #fff;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: center;
+    left: 65%;
+    transform: scale(0);
+    transition: .4s ease;
+    top: -850px;
+}
+
+.paci-container.active-popup {
+    transform: scale(1);
+}
+
+.paci-container .form-box {
+    width: 100%;
+    padding: 25px;
+}
+
+.form-box h2 {
+    font-size: 2em;
+    color: #162938;
+    text-align: center;
+}
+
+.fechar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 46px;
+    height: 46px;
+    background: #162938;
+    font-size: 2em;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    z-index: 1;
+}
+
+.fecha {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 46px;
+    height: 46px;
+    background: #162938;
+    font-size: 2em;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid #162938;
+    margin: 30px 0;
+    
+}
+
+.input-box label {
+    position: relative;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: #162938;
+    font-weight: 500;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label {
+   top: -5px;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: #162938;
     font-weight: 600;
- }
+    padding: 0 35px 0 5px;
+}
+
+.input-box .icon {
+    position: absolute;
+    right: 8px;
+    font-size: 1.2em;
+    color: #162938;
+    line-height: 57px;
+}

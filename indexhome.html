@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -7,7 +8,8 @@
     <title>precisas: site de emprego</title>
     <link rel="stylesheet" href="stylo.css">
     <link rel="stylesheet" href="https://boxicons.com/?query=menu">
-    <link rel="stylesheet" href="code.js">
+    <link rel="stylesheet" href="config.php">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
 <!--inicio do header-->
@@ -27,30 +29,181 @@
              
         
        
-               <a > <button class="btn-login" >Entrar </button></a>
-                <button class="btn-cadastro" >Cadastre-se</button>
+         <button class="btnLogin"> Entrar </button>
+        
+        <!-- <button class="">
+             <h3>cadastre-se</h3>
+             <select class="lo">
+            <option><button class="cuidador"> Cliente</button></option>
+            <option><button class="paciente"> Profissional</button></option>
+          </select>
+               
+         </button>-->
+         
     
     </nav>
 </header>
 <!--fim do header-->
+
+<!--butoão de cadastro e entrar-->
+
+<div class="form-container">
+    <span class="close">
+      <i class='bx bx-x'></i>
+   </span>
+              <!-- Login -->
+         <div class="form-login">
+             <h2>Login</h2>
+
+             <form action="#">
+                 <div class="input-box">
+                     <span class="icon"><i class='bx bxs-envelope'></i></span>
+                     <input type="email" required>
+                     <label>E-mail:</label> 
+                 </div>
+                 <div class="input-box">
+                     <span class="icon"><i class='bx bxs-lock-alt' ></i></span>
+                     <input type="password" required>
+                     <label>Senha:</label> 
+                 </div>    
+ 
+                  <div class="lembrar-esquecer">
+                      <label><input type="checkbox"> Lembrar Senha</label>
+                      <a href="#">Esqueceu a senha?</a>
+                  </div>
+ 
+                <button type="submit" class="btn"  href="/ficha_cad_html_css_pi/ficha_cad.html">Login</button>
+ 
+                    <div class="cadastre">
+                         <p>Não tem uma conta? <a href="#" class="cadastro-link">Cadastre-se</a></p>
+                    </div>   
+             </form>
+          </div> 
+    </div>
+</div>
+<div class="cuida-container">
+    <span class="fechar">
+      <i class='bx bx-x'></i>
+   </span>
+
+  <div class="form-box cuidador">
+    <h2>Cadastro como cuidador</h2>
+
+    <form action="indexhome.php" method= "POST" >
+        <div class="input-box">
+         <span class="icon"><i class='bx bxs-user' ></i></span>
+         <input type="text" required>
+         <label>Nome Completo:</label> 
+        </div>
+
+        <div class="input-box">
+         <span class="icon"><i class='bx bxs-user' ></i></span>
+         <input type="text" required>
+         <label>Idade:</label> 
+       </div>
+
+       <div class="input-box">
+        <span class="icon"><i class='bx bxs-user' ></i></span>
+        <input type="text" required>
+        <label>CPF:</label> 
+      </div>
+
+
+        <div class="input-box">
+            <span class="icon"><i class='bx bxs-envelope'></i></span>
+            <input type="email" required>
+            <label>E-mail:</label> 
+        </div>
+
+        <div class="input-box">
+            <span class="icon"><i class='bx bxs-lock-alt' ></i></span>
+            <input type="password" required>
+            <label>Senha:</label> 
+        </div>
+
+        <div id="checkbox">
+        <label><input type="checkbox"> Concordo com os termos e condições do site</label>
+        </div>
+
+        <button type="submit"   name= class="btn">Cadastro <i class='bx bxs-user-check'></i></button>
+      </form>
+    </div> 
+</div>
+
+<div class="paci-container">
+  <span class="fecha">
+    <i class='bx bx-x'></i>
+ </span>
+
+<div class="form-box cuidador">
+  <h2>Cadastre-se</h2>
+
+  <form action="indexhome.php" method= "POST">
+      <div class="input-box">
+       <span class="icon"><i class='bx bxs-user' ></i></span>
+       <input type="text" required>
+       <label>Nome Completo:</label> 
+      </div>
+
+      <div class="input-box">
+       <span class="icon"><i class='bx bxs-user' ></i></span>
+       <input type="text" required>
+       <label>Idade:</label> 
+     </div>
+
+      <div class="input-box">
+          <span class="icon"><i class='bx bxs-envelope'></i></span>
+          <input type="email" required>
+          <label>E-mail:</label> 
+      </div>
+
+      <div class="input-box">
+          <span class="icon"><i class='bx bxs-lock-alt' ></i></span>
+          <input type="password" required>
+          <label>Senha:</label> 
+      </div>
+      
+
+      <div id="checkbox">
+        <label><input type="checkbox"> Concordo com os termos e condições do site</label>
+      </div>
+
+      <button type="submit" class="btn">Cadastro <i class='bx bxs-user-check'></i></button>
+    </form>
+  </div> 
+</div>
+
+
+
+
+
+
+
 <!--inicio da 1 seção-->
 
-<section>
-    <div class="home" >
+<section class="home-fundo">
+    <div class="home"  id="home" >
                      
                     <div class="home-paragrafo">
-                        <h1><b>Liga você com os melhores profissionais especializado em cuidado do mercado.</b></h1>
+                        <h1><b>Liga você com os melhores profissionais especializados em cuidado do mercado.</b></h1> 
 
                     <div class="home-texto">
                         <p>Relaciona profissionais especializados em cuidado em único local.</p>
-                    </div>
-                    <div class="btn-cadastro" id="home-btn">
-                        <button>Cadastre-se</button>
-                    </div>
-                </div>
-                    <div>
-                    <img src="mao.png" alt="imagem de mãos se unidas">
-                    </div>  
+                   
+                    <!--<div>
+                    <img src="pngwing.com (9).png" alt="imagem de mãos se unidas">
+                    </div>-->
+                    
+                    
+                   <div class="cadastro">
+                        <h1>Registre-se como:</h1>
+                    
+                        <button class="cuidador"> Profissional </button>
+                        <button class="paciente"> Cliente </button>
+                          
+                        
+                        
+                    
 
     </div>
 </section>
@@ -69,15 +222,15 @@
         
             <div class="serviço-conponente">
                 <div class="serviço-box" id="cuidado">
-                    <h3> cuidado ao idoso</h3>
+                    <label >cuidado ao idoso</label> 
                 </div>
 
         <div class="serviço-box" id="cake">
-            <h3>Home care</h3>
+            <label> <strong>Home care</strong>  </label> 
         </div>
 
         <div class="serviço-box" id="comorbidade">
-            <h3>Cuidadores para todos tipos de comorbidades</h3>
+          <label> <strong> Cuidadores para todos tipos de comorbidades</strong></label>  
         </div>
 
         
@@ -89,7 +242,7 @@
 
 
 
-<section class="sobre" id="sobre">
+<section class="sobrenos" id="sobrenos">
     <div class="sobre-paragrato">
         <div>
             <img src="Carol (1).png" alt="">
@@ -108,21 +261,86 @@
                     <h4><b>Sobre</b></h4>
 
                     <p>
-                        produras nasceu com a força de transforma o modo de como as pessoas se comunica com profissionalque era cuidar de se ou parente.
+                            Precisas nasceu com a capacidade de mudar a forma como as pessoas se comunicam com os profissionais e seus familiares. <br>
+                        Desde que nascemos, ouvimos que a forma como nos cuidamos hoje pode se refletir diretamente na vida futura, pensando constantemente
+                        em nosso desejo de estar sempre saudável, criando espectativas que nos fazem refletir no momento necessitamos de profissionais da saúde
+                        cuidará da sua saúde e bem-estar de quem você ama. 
+                        
+                        A partir desse pensamento a plataforma foi desenvolvida para Relaciona de
                     </p>
                 </div>
     </div>
 </section>
-<footer class="footer">
-        
-            <div class="footer-contato">
-                <h4>contato</h4>
+<footer >
+    <section class="footer">
+        <div class="footer-contato">
+                <h2>CONTATO</h2>
+                
+
+                <div class="icon">
+                    <ul>
+                        
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAcdJREFUSEvtlT9IHEEUxr83658UQhobC0FtLsTKKCZ3BkENpAjJrYiViI24a2rTiaQKWNiI4XZFhZAiqTZ7F0HLK7y5s9TaQvFPrdionPNkPe88vQPFURud6r0Z3vebN/MNQ3jgQQ+sjxJAZ/Rr/bFxwqve3M59wK8AIqY1DmDwXJixIOPupC6kAGj/PNxYYRjLxYKkKrtSiZk9HUgB8L5vtEmdqqViMc5Sd3rR2b0XQCDS0WtNMGMgiBXzr0x89oeOeFBbcsnvTLtBCIOl93NLV7wEEP5it0CgMlgwiI9X/rlrQfw2ar0WRDXnnSk6Wk3E1lv7R15WZ0UrWIWYIIhOF6U3X7Kpay6yUwDX5kyE7bTvfgjiSNT+A+I3Fx1tQvE0hJgC+LKeoQhiKhWPzV0xSnESMW8DoAMmVBPzi3JHSEIMpbxYJr92lw4uaukA4D0wQiCISxj9l74zpgVgRiIdd78FImHTbifw7yLAhvSdT1oABfqY8Z3NvEjYtJMErsvldCh9p00LULVf15xMfs8WAFHLI0JzPpe+G7oRANCO9J2eMi6C9N1XOaPlRsS0/gJoeQbkH9pTPqJyT1937vE/fd0dX68/A2jhFCjE9qRrAAAAAElFTkSuQmCC"/>
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAApZJREFUSEvFVU1IVFEYPefpOGUEtusPAyWCgpoQEkeDwZ2QOdbKNhnYPC0yTKRs5apFFFFgM0+piBYRQ82MmqvIXMx7Fln7IpKgRMogKcppfF+80dEZffNjId3l/c53zv3O/e53iTVeXGN+/H+B6vqTe0yloIbEPgj2C4UA35GYME2OjEX8T7K5kLGCCp/P4ZhCl0Iez0YgwLhzTtqfDfZ9scPZCri9vnKQ1yHYmc8diaDfiGhX8hKoqzvj/OaMDQLYsTKB70GJi6CUgHMhPqS7tnShp8fMS6DKq3YTaF4CMwYRf1wpfPAi1Dtt7Xs8PYWzJZOnCZRvc3ztCAaDc5kqTbOoytt6gJB7KeQ/GDe90aG+D/lYlbMCt1e9CuDQEtC8qIf7H/4tuZWXVoG7UQ1CsNcKCPDdCGsVqeQeT/O6WImzP6sgcVMPaUYSs8wi9TmBkgWBcSOsHUslq6j3FTsL+DpH2142wtotWwF3ozoKweZEUPhKjwSaVitAKpeiIf9d+woaVD+J2nl+/jJCAde8W/PL1iLBJnDpvVDQEY1ow5ksOkvgVDJoEt1jIe1RNkuqGlsvUOREEiMO1hrBwEdbgcojLdsVs2A45RHN0PzdEB24/clOpPpw2y5R5D4gGxJx4q0e0lK6cFkXWRi3V/UB6FwkFMxA4Xk9FHia3LPmVNEUm0i2A7JxEWvKOX2g73HqYVbMIuuVxjZNhlfMoYQQJiAsBlAKSFFaVYJRPaJZh0tbtsOu5mhb2Vzc7CVRls3/Rd/Bl3CsbzGC137mJWCBEjZ8VjpTL3B5sgCzivDO1qLpG5nmUc4frbJB3a2ABwFxEXRZHw7BNxAZmTVlcDzDP2DbRfnYsVpMzgpWS5j3HfwrcTL/D9jH5Bkif4OmAAAAAElFTkSuQmCC"/>
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAzVJREFUSEvFlU9oXFUUxr/vvZmK4Ka4MVZ0Y4ktFaxV2pmpaCm0NrWZmaoL0Y1Q82aUVhDjQkRmIf6hoali0vtC1boSDMl7M3WhIlaFvJdCLVFQKrVKFImKO0UombmfzKQTZuqbGoTQu3v3fff87vlzzyFWeXGV7ePqAHIPDN2sFB4XeBfB9YB6XIQSdJ7QGTjpE9H02PzlEfnXwUzBewTACwRdQQsA5gj8kBRKCRtBbiDUJ6AOOpU4ODbZqe0CZIulTRLeB3TBqeupmQ8mflpJjrY+6K13GzQC+qz00Omq/237XBcgk/feJHmv0rg/njS//JfxbNHLQzwE6M+G8LwLTIn8JA7NwWRAwTtF8vsoME90Ga9UnNxXv2cle6skK/HCbM1E2/aXso7V2wIX4tDcl8l70yDWxqG/IxGQLZTOAqhFoam0BffsH+prWI4C2NwJFXhG1JTTwB8ir4+rJrgUge1RaO7oBThH8q2Z4NjhlqBScTJzv74H4CZJr1onFV2Tcpz64sUc4QwLmo9D/1EAasozBe8ohd1R1d/QA+B9B8KPAv9IU5ArlPcI9qiIp+PA/7DTg1zeGxAxCrIcBebTFqBYOkJhIArNbT0Boo7HwUTLg1yxPCzZAxcb2vzlyYm/OwHb95bX2rSdFTAeh/7rzX/ZQmkE0L4o9Pt7Aqz07mx14uWlGw0NUzywJu1u+Wxy/K8kAEUzUzXNHCGT9w6TGLwiQMCJOPRfWTpQ2k3qDYmH4qr5qBOwLe/tc4iRzhC1PJD2XjEHnR4sJ1laJ+C1ZpJTaLiSzRJ8TuCPcWge60oyuDMKze29QjQnsBaH5sW24O6BJ29Ip+0oqDsvL1Nr68+crh3/rb3fLFMQmTj0t/Qq049BzCc/tIWdVs4O0C4S/DwKzKn2zZcBxdI0heui0OzqBRgRtAtp7llJq+gq28FyvxxbA3gyCs2ziYCteW+jS04DOpeSe/CL6vjPXS2jx0dusNxvHTsG8EbHdR+emRr7JhFw6TW22jVAEvoawGJzX2CDxHlBayDeQshdMsJrAWwS1ADwUhz6zZe/vBIHyf8ZOKzjnaT2fnVG5krivlLNqnvwD7LSjCg4GbfhAAAAAElFTkSuQmCC"/>
+
+                    </ul>
+                </div>
 
 
                 </div>
         
+    </section>
+        
+            
 </footer>
 
+
+
+<script>
+const container = document.querySelector ('.form-container')
+/*const loginLink = document.querySelector ('.login-link')*/
+/*const cadastroLink = document.querySelector ('.cadastro-link')*/
+const btnLogin = document.querySelector ('.btnLogin')
+const iClose = document.querySelector ('.close')
+
+btnLogin.onclick = () => {
+    container.classList.add('active-popup')
+}
+
+iClose.onclick = () => {
+    container.classList.remove('active-popup')
+}
+
+
+const btnCuidador = document.querySelector (".cuidador");
+const Cuidador = document.querySelector (".cuida-container");
+const btnPaciente = document.querySelector (".paciente");
+const Paciente = document.querySelector (".paci-container");
+const fechar = document.querySelector (".fechar");
+const Fecha = document.querySelector (".fecha");
+
+btnCuidador.onclick = () => {
+    Cuidador.classList.add("active"); 
+}
+
+btnPaciente.onclick = () => {
+    Paciente.classList.add("active-popup")
+}
+  
+fechar.onclick = () => {
+    Cuidador.classList.remove('active');
+} 
+
+Fecha.onclick = () => {
+    Paciente.classList.remove('active-popup');
+}
+
+
+
+
+
+</script>
 
 
 
@@ -130,10 +348,3 @@
     
 </body>
 </html>
-<script>
-    var a=document.getElementById("login")
-    var b = document.getElementById("cadastrar")
-
-
-    
-</script>
